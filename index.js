@@ -25,7 +25,10 @@ async function main() {
 
       fs.writeFile('URL.txt', answers.url, (err) => {
         if (err) throw err;
-        console.log('\nThe file has been saved!\n---\n - To view the QR code, open qr_img.png\n - To view the URL, open URL.txt\n - To generate a new QR code, restart the program.');
+        console.log('\nThe file has been saved!\n---');
+        console.log(' - To view the QR code, open qr_img.png');
+        console.log(' - To view the URL, open URL.txt');
+        console.log(' - To generate a new QR code, restart the program.');
       });
     });
 }
